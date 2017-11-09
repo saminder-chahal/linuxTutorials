@@ -1,0 +1,3 @@
+(iostat -c 2 5    --> (to check CPU stats overtime to make sure how CPU is behaving;  2 means every two seconds and 5 times operation)
+iostat -c (to check cpu utilization / stats) 
+iostat -d 2 5 (to make sure disk stats per second on Device (type of disk attached red from /dev)

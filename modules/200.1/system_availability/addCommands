@@ -1,0 +1,2 @@
+uptime -V (to check version)
+yum provides */uptime  (to check which upstream yum repository provides the uptime binary package)

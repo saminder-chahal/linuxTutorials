@@ -1,0 +1,5 @@
+chkconfig <service> on  - (will turn service on during reboot)[rc.conf]
+sudo service sysstat restart    - (to restart sysstat service after enabling sar in /etc/default/systat) 
+10:15:58 PM  LINUX RESTART      (2 CPU) means sar service was restarted at this time
+/var/log/sysstat/sa09 log file for sar saying when the service was created 
+df -h -- (to know more about disks available and do reporting)

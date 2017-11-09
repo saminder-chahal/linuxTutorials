@@ -1,0 +1,3 @@
+iostat: report CPU stats ad i/o stats for devices, partitions and NFS (network filesystem)
+
+man iostat

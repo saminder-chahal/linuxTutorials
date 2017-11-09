@@ -1,0 +1,5 @@
+uptime: tell how long system was running
+
+uptime reads data from /var/run/utmp file
+
+for more info: man uptime
