@@ -1,0 +1,3 @@
+netstat: display network connections; routing info; interface stats
+
+NOTE: go through the whole manpage once to know more details being a systemadmin

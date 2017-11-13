@@ -1,0 +1,6 @@
+NOTE: It can be slow if large number of incoming listening services that have active connections to them because it will try to do reverse dns lookups in that case meaning ipadress to name(reverse dns lookup)
+
+netstat -r        --       list system routing table
+netstat -s        --    detiled information about each protocol packets recieved since last reboot
+netstat -ltu        --   -l stands for listening protocols and listening filesystem;  -t for tcp only; -u means udp only
+netstat -lp        --  displays information about listening protocols with pids and path to process files and i-node info etc

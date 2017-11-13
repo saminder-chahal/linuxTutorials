@@ -1,0 +1,4 @@
+vmstat: report virtual memory stats (advanced version of free) 
+
+
+More info: man vmstat

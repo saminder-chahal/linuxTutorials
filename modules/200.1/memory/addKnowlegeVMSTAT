@@ -1,0 +1,21 @@
+look for manpage vmstat to get more info for each field; for ex inactive means memory is allocated but not currently used i.e memory buffered but not currently used by paging (this block of memory movement is not reported by paging)
+
+vmstat -a      -     to get more info for active and inactive memory out of memory used
+
+we can use combination of free and vmstat commands to get more system knowledge
+
+vmstat 5     -  means output system memory info after every 5 seconds to monitor memeory movements by processes
+
+vmstat 6 -t     ---    means dumping memory stats with a timestamp  (can be used by monitoring tool or consul etc or feed this in database or script with timestamp info)
+
+vmstat -s     --  to get knowlegde in pure english 
+
+
+If an application calls a page and it is in the RAM, then it is a page in occurs. If an app calls for a page from memory, and that page is currently stored on the hard disk and has to be read back into the RAM, then a Page Out occurs.
+
+If page-outs exceed page-ins, you definitely don't have enough RAM. Ideally, page-outs should be less than 20% of the number of page-ins (the fewer page-outs, the faster your machine is performing) On my machine, I aim for less than 5%.
+
+Adding more RAM, or reducing the number of open applications, are the only ways to reduce page-outs. While freeing up memory by working with fewer and smaller files and apps may help, more RAM is the only reasaonable solution. 
+
+
+while true; do vmstat -s; sleep 3; done  -- to create our own customeReportingTool

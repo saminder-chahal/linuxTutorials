@@ -1,0 +1,2 @@
+free -m    - to get MB memory info 
+free -h    - relevan memory info with unit 

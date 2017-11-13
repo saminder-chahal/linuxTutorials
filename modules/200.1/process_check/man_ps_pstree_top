@@ -1,0 +1,3 @@
+ps:  get prcoesses running information
+pstree:  very good to get tree like information about the running processes | how the prcoesses runing under one another
+top: give more detailed information after every 3 seconds

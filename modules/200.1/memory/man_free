@@ -1,0 +1,4 @@
+free:   display amount of free and used memory in the system (swap memory as well)
+
+
+Moe info: man free

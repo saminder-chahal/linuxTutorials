@@ -1,0 +1,5 @@
+collectd_conf:   /etc/collectd/
+
+collectd_db file: /usr/share/collectd/
+
+collectd_rrd_loaded_plugin:   /var/lib/collectd/rrd/  (can be copied from collectd_conf file where we enable plugins under collect.conf)

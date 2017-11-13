@@ -1,0 +1,7 @@
+ps     -  shows process information only on my terminal and my process id
+ps -e    - shows all the processes running on the system not only specific to my uid
+ps -ef   -  shows more detalied information about the process including process uptime plus commands information
+pstree     -   to get process tree like hierarchy running one under another 
+pstree  -h -p   -   also gives process id's of each process 
+pstree  -h -p -a -   -a is very useful to get knowledge about passed parameters to the process  
+top   ---      press f key to go to toggle filtering required for the task;   go up/down;   then press SPACE to add/remove that field in main top view on the system
