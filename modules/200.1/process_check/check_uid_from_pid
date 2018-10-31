@@ -1,0 +1,5 @@
+Try the -p option to the ps command.
+
+For instance, if you have PID 1234, run:
+
+ps -u -p 1234
