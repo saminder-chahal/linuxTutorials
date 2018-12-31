@@ -1,0 +1,10 @@
+Useful commands to get linux man information
+
+man man  (get man page sections info)
+
+info man (should allow you navigate through man pageslike webpages go to See Also and press ENTER)
+
+whatis ls  (Should list all the man sections available for ls command)
+
+apropos free (will list all the commands related to free)
+

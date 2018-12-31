@@ -1,0 +1,17 @@
+udev --> device manager for Linux kernel, links information on system hardware to /dev. It automatically detects new devices available and link that to /dev accordingly
+
+/dev -->  contaions information on all of the connected hardware on a system
+
+D-bus  -->  sends data messages between applications, a conduit of info about what is going on the system, udv utilizes dbus to notify users and the system when new hardware is attached.
+
+
+
+HUMAN READABLE FORMAT INFORMATION FROM /dev directory
+
+lspci
+
+lsusb
+
+lscpu
+
+lsblk

@@ -1,0 +1,4 @@
+Psuedo file system means  new fake  file system created by Kernel after the system bootup .
+
+/proc  -> contains pids currently running can be viewed under folder matching with that pid
+/sys

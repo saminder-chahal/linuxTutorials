@@ -1,0 +1,7 @@
+uname --> tells what we are running
+
+lsmod   --> list currently running kernel modules and their usage
+
+modinfo --> list more detailed information about specific kernel module
+
+modprobe   --> to remove or reload kernel module should be used carefully otherwise whole system can be crashed
