@@ -1,0 +1,3 @@
+Introduced in 2006, it basically start the tasks asynchronously decreasing the boot up times.
+
+upstart also monitors the services.

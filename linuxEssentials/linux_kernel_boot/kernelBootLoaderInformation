@@ -1,0 +1,5 @@
+dmesg --> use to pull up kernel ring buffer logs
+
+journalctl -k --> kernel ring buffer within the systemd journal
+
+journalctl stores logs for all the events

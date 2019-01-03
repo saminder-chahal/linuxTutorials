@@ -1,0 +1,9 @@
+first bootloader partition is found by the kernel
+then kernel image and RAM initialization process it loaded
+then kernel pulls initial drivers and set up tools from RAM disk
+then kernel hands the control of system over to /sbin/init  (CENTOS logs say 'INIT: version 2.86 booting')
+then init performs some system maintenance tasks from /etc/rc.d/rc.sysinit (/etc/inittab files runlevels info)
+then after init has read the initdefault line  in /etc/inittabl and is entering runlevel3  (logs INIT: Entering runlevel: 3)
+then init starts up the scripts located under that runlevel directory (startup processes basically)
+Finally after this step, system should be ready to use. (It asks for user login info)
+
