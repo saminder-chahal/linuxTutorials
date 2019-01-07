@@ -1,0 +1,14 @@
+cat /etc/inittab will give you the default runlevels being used by the system
+
+runlevel command will also return the runlevel currently being used by the system
+
+As a root user, we can change the current runlevel for the system without modifying the /etc/inittab file by using 'telinit' command. For ex: telinit 3 will change the current runlevel for the system to 3
+
+
+We can also change the kernel parameters to use the runlevel for the machine we want to use. Steps as follow:
+
+1. reboot
+2. press Enter while rebooting
+3. press 'a' to change the kernel parameter
+4. on the screen after space type <runlevel-number> .
+5. Hit Enter
