@@ -1,0 +1,49 @@
+Debian based distro:
+apt-get (handles pkg dependencies as well)
+dpkg (does not handle package dependencies)
+
+
+dpkg -l (list out packages that match the given string)
+dpkg -L lists out all the files that were installed with specified package
+dpkg --info  (display information on a package)
+
+
+REDHAT Distro
+yum   (handles pkg dependencies)
+rpm   (does not handle pkg dependencies)
+
+Yum (Yellowdog updater, modified)i(CentSO, RHEL)
+handles package dependencies as well similar to apt-get
+/etc/yum.conf
+/etc/yum.repors.d/
+/var/cache/yum (cached data)
+
+
+
+Useful commands:
+yum update (updates all the old versions of pkg as well(
+yum search  (searches the yum repos for a specified package listed under /etc/yum.repos.d)
+yum info pkgName
+yum list installed (lists all installed packages)
+yum clean all (cleans up all yums cache information and its local database file)
+yum install pkgName
+yum remove pkgName
+yum autoremove pkgName (removes dependencies as well)
+yum whatprovides  */httpd      (find out what package provides a specified file name)
+yum reinstall    (reinstalls a fresh copy of specified package
+yumdownloader pkgName (it will download the package without actually installing it)
+
+
+rpm usefulCommands:
+db loacation: /var/lib/rpm
+rpm --rebuilddb  (repairs the corrupted rpm database)
+rpm -qpi pkgName (displays information of the pkg similar to yum info)
+rpm -qpl pkgName (will list files in the package)
+rpm -qa  (list out all installed packages)
+rpm -i (installs the specified package)  (also use -ivh)
+rpm-U pkgName  (Upgrades the package
+rpm -e pkgName (not include the whole rpm string just package name ) (uninstalls the package)
+rpm -Va (verifies all installed packages)
+rpm2cpio  (converts an .rpm file into cpio archive file, often combined with the cpio command i.e rpm2cpio some.rpm | cpio -idmv) (It replicates the rpm files into current directory, helpful to make slight source pkg file changes, modify or troubleshoot)
+
+
